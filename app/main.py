@@ -1,47 +1,98 @@
-from logging import basicConfig, StreamHandler
-
-from idna.codec import StreamReader
-from sqlalchemy.testing.plugin.plugin_base import config
-from sqlalchemy.testing.suite.test_reflection import metadata
-
-from app.config import Config
-from app.processing.data_parser import DataParser
-from app.processing.db import DB
-from app.agents.agent import GigaChatAgent
-from app.bot.telegram_bot import TelegramBot
+# app/main.py
 import logging
+import sys
 import os
+from app.config import Config
+from app.database.mysql_db import MySQLVectorDB
+from app.gigachat.api_client import GigaChatClient
+from app.processing.data_parser import DataParser
+from app.bot.telegram_bot import TelegramBot
 
-logging,basicConfig(
-    level= logging.INFO,
-    format= '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers= [
-        logging.FileHandler("bot.log"),
-        logging,StreamHandler()
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("cosmos_bot.log", encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
     ]
 )
 
-def main ():
+logger = logging.getLogger(__name__)
 
-    config = Config()
-    parser = DataParser(config.CAMP_URL)
-    website_data = parser.parse_website()
 
-    vector_db = DB(config.API_KEY)
+def setup_database(gigachat_client, database):
+    """Настройка базы данных с начальными данными"""
+    try:
+        count = database.get_document_count()
+        if count > 0:
+            logger.info(f"В базе уже есть {count} документов, пропускаем загрузку")
+            return
 
-    if not os.path.exists("./data/chroma_db"):
-        from langchain.docstore.document import Document
-        documents = [Document(page_content=item['content'], metadata={"sourse":item['sourse']})
-                     for item in website_data]
-        vector_db.create_vector_db(documents)
-    else:
-       vector_db.load_vector_db()
+        logger.info("Начинаем загрузку данных в базу...")
 
-    retriever = vector_db.get_retriever()
-    agent = GigaChatAgent(config.API_KEY, retriever)
+        parser = DataParser(Config.CAMP_URL)
+        website_data = parser.parse_website()
 
-    bot = TelegramBot(config.BOT_TOKEN, agent)
-    bot.run()
+        faq_data = parser.create_sample_faq()
 
-    if __name__ == "__main__":
-        main()
+        all_data = website_data + faq_data
+
+        if not all_data:
+            logger.warning("Не удалось получить данные для базы")
+            return
+
+
+        texts = [doc['content'] for doc in all_data]
+        embeddings = gigachat_client.get_embeddings(texts)
+
+        if embeddings:
+            for i, doc in enumerate(all_data):
+                doc['embedding'] = embeddings[i]
+        else:
+            logger.warning("Не удалось получить эмбеддинги, сохраняем документы без них")
+
+
+        database.store_documents(all_data)
+        logger.info(f"Успешно загружено {len(all_data)} документов в базу")
+
+    except Exception as e:
+        logger.error(f"Ошибка настройки базы данных: {e}")
+
+
+def main():
+    """Основная функция приложения"""
+    try:
+        logger.info("Запуск приложения лагеря 'Космос'...")
+
+
+        config = Config()
+        gigachat_client = GigaChatClient(config.GIGACHAT_API_KEY)
+        database = MySQLVectorDB(config.MYSQL_CONFIG)
+
+
+        setup_database(gigachat_client, database)
+
+
+        count = database.get_document_count()
+        if count == 0:
+            logger.error("В базе нет данных! Бот не может работать без базы знаний.")
+            return
+
+        logger.info(f"База данных готова, документов: {count}")
+
+
+        bot = TelegramBot(config.TELEGRAM_BOT_TOKEN, gigachat_client, database)
+        bot.run()
+
+    except KeyboardInterrupt:
+        logger.info("Приложение остановлено пользователем")
+    except Exception as e:
+        logger.error(f"Критическая ошибка: {e}")
+    finally:
+
+        if 'database' in locals():
+            database.close()
+
+
+if __name__ == "__main__":
+    main()
