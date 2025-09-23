@@ -21,7 +21,6 @@ logger = logging.getLogger(__name__)
 
 
 def setup_database(gigachat_client, database):
-    """Настройка базы данных с начальными данными"""
     try:
         count = database.get_document_count()
         if count > 0:
@@ -60,7 +59,6 @@ def setup_database(gigachat_client, database):
 
 
 def main():
-    """Основная функция приложения"""
     try:
         logger.info("Запуск приложения лагеря 'Космос'...")
 

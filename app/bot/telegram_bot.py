@@ -16,7 +16,7 @@ class TelegramBot:
         self.application = None
 
     async def start_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Обработчик команды /start"""
+
         welcome_text = """
         👋 Привет! Я - умный помощник детского лагеря "Космос" в Тамбовской области.
 
@@ -33,7 +33,7 @@ class TelegramBot:
         await update.message.reply_text(welcome_text)
 
     async def help_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Обработчик команды /help"""
+
         help_text = """
         🤖 Как пользоваться ботом:
 
@@ -49,7 +49,7 @@ class TelegramBot:
         await update.message.reply_text(help_text)
 
     async def handle_message(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Обработка текстовых сообщений"""
+
         user = update.message.from_user
         user_message = update.message.text
 
@@ -104,13 +104,13 @@ class TelegramBot:
             await update.message.reply_text("Извините, произошла ошибка. Попробуйте задать вопрос позже.")
 
     def setup_handlers(self):
-        """Настройка обработчиков команд"""
+
         self.application.add_handler(CommandHandler("start", self.start_command))
         self.application.add_handler(CommandHandler("help", self.help_command))
         self.application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
 
     def run(self):
-        """Запуск бота"""
+
         try:
             self.application = Application.builder().token(self.token).build()
             self.setup_handlers()

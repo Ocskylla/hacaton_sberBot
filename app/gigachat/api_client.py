@@ -15,7 +15,7 @@ class GigaChatClient:
         self.token_expires = None
 
     def _authenticate(self):
-        """Аутентификация в GigaChat API"""
+
         if self.access_token and self.token_expires and datetime.now() < self.token_expires:
             return True
 
@@ -36,7 +36,6 @@ class GigaChatClient:
             if response.status_code == 200:
                 data = response.json()
                 self.access_token = data['access_token']
-                # Токен действует 30 минут, устанавливаем expiration на 25 минут
                 self.token_expires = datetime.now() + timedelta(minutes=25)
                 logger.info("Успешная аутентификация в GigaChat")
                 return True
@@ -49,7 +48,6 @@ class GigaChatClient:
             return False
 
     def get_embeddings(self, texts):
-        """Получение эмбеддингов для текстов"""
         if not self._authenticate():
             return None
 
@@ -84,7 +82,7 @@ class GigaChatClient:
             return None
 
     def chat_completion(self, messages, temperature=0.7):
-        """Отправка запроса к чат-модели"""
+
         if not self._authenticate():
             return "Извините, произошла ошибка при подключении к AI-сервису."
 

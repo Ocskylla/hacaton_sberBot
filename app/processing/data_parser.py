@@ -17,13 +17,13 @@ class DataParser:
         })
 
     def clean_text(self, text):
-        """Очистка текста от лишних пробелов и символов"""
+
         text = re.sub(r'\s+', ' ', text)
         text = re.sub(r'\n+', '\n', text)
         return text.strip()
 
     def parse_website(self):
-        """Парсинг основных страниц сайта лагеря"""
+
         pages_to_parse = [
             '/about', '/o-lagere', '/programs', '/programmy',
             '/parents', '/roditelyam', '/documents', '/dokumenty',
@@ -40,15 +40,12 @@ class DataParser:
 
                 soup = BeautifulSoup(response.text, 'html.parser')
 
-                # Удаляем скрипты и стили
                 for script in soup(["script", "style"]):
                     script.decompose()
 
-                # Извлекаем заголовок и основной текст
                 title = soup.find('title')
                 title_text = title.get_text() if title else ""
 
-                # Ищем основной контент
                 main_content = soup.find('main') or soup.find('article') or soup.find('div',
                                                                                       class_=re.compile('content|main'))
                 if main_content:
@@ -58,10 +55,10 @@ class DataParser:
 
                 cleaned_text = self.clean_text(text)
 
-                if cleaned_text and len(cleaned_text) > 100:  # Минимальная длина текста
+                if cleaned_text and len(cleaned_text) > 100:
                     all_data.append({
                         'source': url,
-                        'content': f"{title_text}\n\n{cleaned_text}"[:5000],  # Ограничиваем длину
+                        'content': f"{title_text}\n\n{cleaned_text}"[:5000],
                         'type': 'website'
                     })
                     logger.info(f"Успешно распарсена страница: {url}")
@@ -70,7 +67,7 @@ class DataParser:
                 logger.warning(f"Не удалось распарсить страницу {page}: {e}")
                 continue
 
-        # Если не нашли страниц, пробуем парсить главную страницу
+
         if not all_data:
             try:
                 response = self.session.get(self.base_url, timeout=10)
@@ -94,7 +91,7 @@ class DataParser:
         return all_data
 
     def create_sample_faq(self):
-        """Создание примерного FAQ, если нет реальных данных"""
+
         sample_faq = [
             {
                 'question': 'Какие документы нужны для заезда в лагерь?',
@@ -113,7 +110,7 @@ class DataParser:
             }
         ]
 
-        # Конвертируем FAQ в формат документов
+
         documents = []
         for i, item in enumerate(sample_faq):
             content = f"Вопрос: {item['question']}\nОтвет: {item['answer']}"

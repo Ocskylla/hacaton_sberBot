@@ -17,7 +17,7 @@ class MySQLVectorDB:
         self._create_tables()
 
     def _connect(self):
-        """Установка соединения с MySQL"""
+
         try:
             self.connection = mysql.connector.connect(**self.config)
             logger.info("Успешное подключение к MySQL")
@@ -26,11 +26,10 @@ class MySQLVectorDB:
             raise
 
     def _create_tables(self):
-        """Создание необходимых таблиц"""
+
         try:
             cursor = self.connection.cursor()
 
-            # Таблица для документов
             create_documents_table = """
             CREATE TABLE IF NOT EXISTS documents (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -42,7 +41,6 @@ class MySQLVectorDB:
             )
             """
 
-            # Таблица для эмбеддингов
             create_embeddings_table = """
             CREATE TABLE IF NOT EXISTS document_embeddings (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -65,17 +63,14 @@ class MySQLVectorDB:
             raise
 
     def store_documents(self, documents):
-        """Сохраняет документы и их эмбеддинги в базу"""
+
         try:
             cursor = self.connection.cursor()
 
-            # Очищаем старые данные
             cursor.execute("DELETE FROM document_embeddings")
             cursor.execute("DELETE FROM documents")
 
-            # Сохраняем документы
             for i, doc in enumerate(documents):
-                # Вставляем документ
                 insert_doc_query = """
                 INSERT INTO documents (content, source, chunk_index)
                 VALUES (%s, %s, %s)
@@ -88,7 +83,6 @@ class MySQLVectorDB:
 
                 document_id = cursor.lastrowid
 
-                # Сохраняем эмбеддинг
                 if 'embedding' in doc:
                     insert_embed_query = """
                     INSERT INTO document_embeddings (document_id, embedding)
@@ -109,11 +103,9 @@ class MySQLVectorDB:
             raise
 
     def search_similar_documents(self, query_embedding, k=3):
-        """Поиск похожих документов по эмбеддингу запроса"""
         try:
             cursor = self.connection.cursor(dictionary=True)
 
-            # Получаем все документы с эмбеддингами
             cursor.execute("""
                 SELECT d.id, d.content, d.source, de.embedding
                 FROM documents d
@@ -126,7 +118,6 @@ class MySQLVectorDB:
             if not documents:
                 return []
 
-            # Вычисляем косинусное сходство для каждого документа
             scored_docs = []
             for doc in documents:
                 doc_embedding = json.loads(doc['embedding'])
@@ -137,7 +128,6 @@ class MySQLVectorDB:
                     'similarity': similarity
                 })
 
-            # Сортируем по сходству и возвращаем топ-K
             scored_docs.sort(key=lambda x: x['similarity'], reverse=True)
             return scored_docs[:k]
 
@@ -146,7 +136,6 @@ class MySQLVectorDB:
             return []
 
     def _cosine_similarity(self, vec1, vec2):
-        """Вычисление косинусного сходства между двумя векторами"""
         try:
             dot_product = np.dot(vec1, vec2)
             norm_vec1 = np.linalg.norm(vec1)
@@ -161,7 +150,6 @@ class MySQLVectorDB:
             return 0.0
 
     def get_document_count(self):
-        """Возвращает количество документов в базе"""
         try:
             cursor = self.connection.cursor()
             cursor.execute("SELECT COUNT(*) FROM documents")
@@ -173,7 +161,6 @@ class MySQLVectorDB:
             return 0
 
     def close(self):
-        """Закрывает соединение с базой данных"""
         if self.connection:
             self.connection.close()
             logger.info("Соединение с MySQL закрыто")
