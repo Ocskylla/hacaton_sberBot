@@ -3,117 +3,204 @@ import requests
 import json
 import logging
 from datetime import datetime, timedelta
+import uuid
+import urllib3
+import time
+from typing import List, Optional
+
+# Отключаем предупреждения SSL
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 logger = logging.getLogger(__name__)
 
 
 class GigaChatClient:
     def __init__(self, api_key):
+        if not api_key:
+            raise ValueError("API ключ не может быть пустым")
+        
         self.api_key = api_key
-        self.base_url = "https://gigachat.devices.sberbank.ru/api/v1"
+        self.auth_url = "https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
+        self.api_base_url = "https://gigachat.devices.sberbank.ru/api/v1/"
         self.access_token = None
         self.token_expires = None
+        
+        logger.info("✅ GigaChatClient инициализирован")
 
-    def _authenticate(self):
-
+    def _authenticate(self, max_retries=3) -> bool:
+        """Аутентификация в GigaChat API с повторными попытками"""
         if self.access_token and self.token_expires and datetime.now() < self.token_expires:
+            logger.debug("✅ Используется существующий токен")
             return True
 
-        try:
-            headers = {
-                'Authorization': f'Bearer {self.api_key}',
-                'Content-Type': 'application/x-www-form-urlencoded'
-            }
+        for attempt in range(max_retries):
+            try:
+                # Генерируем уникальный RqUID
+                rq_uid = str(uuid.uuid4())
+                
+                headers = {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Accept': 'application/json',
+                    'RqUID': rq_uid,
+                    'Authorization': f'Basic {self.api_key}'
+                }
 
-            response = requests.post(
-                'https://ngw.devices.sberbank.ru:9443/api/v2/oauth',
-                headers=headers,
-                data='scope=GIGACHAT_API_PERS',
-                verify=False,
-                timeout=30
-            )
+                payload = {
+                    'scope': 'GIGACHAT_API_PERS'
+                }
 
-            if response.status_code == 200:
-                data = response.json()
-                self.access_token = data['access_token']
-                self.token_expires = datetime.now() + timedelta(minutes=25)
-                logger.info("Успешная аутентификация в GigaChat")
-                return True
-            else:
-                logger.error(f"Ошибка аутентификации: {response.status_code} - {response.text}")
-                return False
+                logger.info(f"🔐 Попытка аутентификации {attempt + 1}/{max_retries}...")
+                
+                response = requests.post(
+                    self.auth_url,
+                    headers=headers,
+                    data=payload,
+                    verify=False,
+                    timeout=30
+                )
 
-        except Exception as e:
-            logger.error(f"Ошибка при аутентификации: {e}")
-            return False
+                logger.info(f"📊 Статус ответа аутентификации: {response.status_code}")
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    self.access_token = data.get('access_token')
+                    
+                    if not self.access_token:
+                        logger.error("❌ В ответе нет access_token")
+                        continue
+                    
+                    expires_in = data.get('expires_in', 1800)
+                    self.token_expires = datetime.now() + timedelta(seconds=expires_in - 300)
+                    
+                    logger.info("✅ Успешная аутентификация в GigaChat")
+                    return True
+                else:
+                    logger.warning(f"⚠️ Ошибка аутентификации: {response.status_code} - {response.text}")
+                    if attempt < max_retries - 1:
+                        wait_time = 2 ** attempt  # Экспоненциальная задержка
+                        logger.info(f"⏳ Ожидание {wait_time} секунд перед повторной попыткой...")
+                        time.sleep(wait_time)
 
-    def get_embeddings(self, texts):
-        if not self._authenticate():
-            return None
+            except requests.exceptions.Timeout:
+                logger.error(f"⏰ Таймаут при аутентификации (попытка {attempt + 1})")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                continue
+                    
+            except requests.exceptions.ConnectionError as e:
+                logger.error(f"🔌 Ошибка соединения при аутентификации (попытка {attempt + 1}): {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                continue
+                    
+            except Exception as e:
+                logger.error(f"❌ Неожиданная ошибка при аутентификации (попытка {attempt + 1}): {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                continue
 
-        try:
-            headers = {
-                'Authorization': f'Bearer {self.access_token}',
-                'Content-Type': 'application/json'
-            }
+        logger.error("❌ Все попытки аутентификации завершились неудачей")
+        return False
 
-            data = {
-                "model": "Embeddings",
-                "input": texts
-            }
+    def chat_completion(self, messages, temperature=0.7, max_tokens=1024, max_retries=3) -> Optional[str]:
+        """Отправка запроса к чат-модели GigaChat с повторными попытками"""
+        for attempt in range(max_retries):
+            try:
+                if not self._authenticate():
+                    return "Извините, произошла ошибка при подключении к AI-сервису."
 
-            response = requests.post(
-                f'{self.base_url}/embeddings',
-                headers=headers,
-                json=data,
-                verify=False,
-                timeout=30
-            )
+                headers = {
+                    'Authorization': f'Bearer {self.access_token}',
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
 
-            if response.status_code == 200:
-                result = response.json()
-                return [item['embedding'] for item in result['data']]
-            else:
-                logger.error(f"Ошибка получения эмбеддингов: {response.status_code} - {response.text}")
-                return None
+                data = {
+                    "model": "GigaChat",
+                    "messages": messages,
+                    "temperature": temperature,
+                    "max_tokens": max_tokens,
+                    "stream": False
+                }
 
-        except Exception as e:
-            logger.error(f"Ошибка при получении эмбеддингов: {e}")
-            return None
+                logger.info(f"💬 Попытка чат-запроса {attempt + 1}/{max_retries}")
+                
+                response = requests.post(
+                    f'{self.api_base_url}chat/completions',
+                    headers=headers,
+                    json=data,
+                    verify=False,
+                    timeout=60  # Увеличиваем таймаут
+                )
 
-    def chat_completion(self, messages, temperature=0.7):
+                logger.info(f"📊 Статус ответа чата: {response.status_code}")
+                
+                if response.status_code == 200:
+                    result = response.json()
+                    response_text = result['choices'][0]['message']['content']
+                    logger.info("✅ Успешно получен ответ от GigaChat")
+                    return response_text
+                else:
+                    logger.warning(f"⚠️ Ошибка чат-запроса: {response.status_code} - {response.text}")
+                    if attempt < max_retries - 1:
+                        wait_time = 2 ** attempt
+                        logger.info(f"⏳ Ожидание {wait_time} секунд перед повторной попыткой...")
+                        time.sleep(wait_time)
+                        continue
+                    else:
+                        return "Извините, произошла ошибка при обработке запроса."
 
-        if not self._authenticate():
-            return "Извините, произошла ошибка при подключении к AI-сервису."
+            except requests.exceptions.Timeout:
+                logger.error(f"⏰ Таймаут при запросе к GigaChat (попытка {attempt + 1})")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                continue
+                
+            except requests.exceptions.ConnectionError as e:
+                logger.error(f"🔌 Ошибка соединения с GigaChat (попытка {attempt + 1}): {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                continue
+                
+            except Exception as e:
+                logger.error(f"❌ Неожиданная ошибка при запросе к GigaChat (попытка {attempt + 1}): {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                continue
 
-        try:
-            headers = {
-                'Authorization': f'Bearer {self.access_token}',
-                'Content-Type': 'application/json'
-            }
+        return "Извините, в настоящее время сервис недоступен. Пожалуйста, попробуйте позже."
 
-            data = {
-                "model": "GigaChat",
-                "messages": messages,
-                "temperature": temperature,
-                "max_tokens": 1024
-            }
+    def get_embeddings(self, texts, max_retries=2) -> Optional[List[List[float]]]:
+        """Получение эмбеддингов для текстов (оставлено для совместимости)"""
+        logger.warning("⚠️ Метод get_embeddings больше не используется в новой архитектуре")
+        return None
 
-            response = requests.post(
-                f'{self.base_url}/chat/completions',
-                headers=headers,
-                json=data,
-                verify=False,
-                timeout=30
-            )
+    def test_connection(self):
+        """Тестирование подключения к GigaChat"""
+        logger.info("🔍 Тестируем подключение к GigaChat...")
+        success = self._authenticate()
+        
+        if success:
+            try:
+                headers = {
+                    'Authorization': f'Bearer {self.access_token}',
+                    'Accept': 'application/json'
+                }
 
-            if response.status_code == 200:
-                result = response.json()
-                return result['choices'][0]['message']['content']
-            else:
-                logger.error(f"Ошибка чат-запроса: {response.status_code} - {response.text}")
-                return "Извините, произошла ошибка при обработке запроса."
+                response = requests.get(
+                    f'{self.api_base_url}models',
+                    headers=headers,
+                    verify=False,
+                    timeout=30
+                )
 
-        except Exception as e:
-            logger.error(f"Ошибка при отправке чат-запроса: {e}")
-            return "Извините, произошла ошибка при подключении к AI-сервису."
+                if response.status_code == 200:
+                    models = response.json()
+                    return True, f"✅ Подключение успешно! Доступно моделей: {len(models.get('data', []))}"
+                else:
+                    return True, f"✅ Аутентификация успешна, но ошибка получения моделей: {response.status_code}"
+                    
+            except Exception as e:
+                return True, f"✅ Аутентификация успешна, но ошибка теста: {e}"
+        else:
+            return False, "❌ Ошибка аутентификации"

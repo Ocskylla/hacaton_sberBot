@@ -2,11 +2,8 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import logging
-import json
-from datetime import datetime
 
 logger = logging.getLogger(__name__)
-
 
 class TelegramBot:
     def __init__(self, token, gigachat_client, database):
@@ -16,7 +13,6 @@ class TelegramBot:
         self.application = None
 
     async def start_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-
         welcome_text = """
         👋 Привет! Я - умный помощник детского лагеря "Космос" в Тамбовской области.
 
@@ -33,7 +29,6 @@ class TelegramBot:
         await update.message.reply_text(welcome_text)
 
     async def help_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-
         help_text = """
         🤖 Как пользоваться ботом:
 
@@ -49,21 +44,15 @@ class TelegramBot:
         await update.message.reply_text(help_text)
 
     async def handle_message(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-
         user = update.message.from_user
         user_message = update.message.text
 
         logger.info(f"Вопрос от {user.first_name} ({user.id}): {user_message}")
-
         await update.message.chat.send_action(action="typing")
 
         try:
-            question_embedding = self.gigachat.get_embeddings([user_message])
-            if not question_embedding:
-                await update.message.reply_text("Извините, произошла ошибка при обработке запроса.")
-                return
-
-            similar_docs = self.db.search_similar_documents(question_embedding[0], k=3)
+            # Используем текстовый поиск вместо эмбеддингов
+            similar_docs = self.db.search_similar_documents(user_message, k=3)
 
             context = ""
             if similar_docs:
@@ -96,7 +85,6 @@ class TelegramBot:
                 response += "\n\nДля уточнения деталей свяжитесь с администрацией лагеря."
 
             await update.message.reply_text(response)
-
             logger.info(f"Ответ отправлен пользователю {user.first_name}")
 
         except Exception as e:
@@ -104,13 +92,11 @@ class TelegramBot:
             await update.message.reply_text("Извините, произошла ошибка. Попробуйте задать вопрос позже.")
 
     def setup_handlers(self):
-
         self.application.add_handler(CommandHandler("start", self.start_command))
         self.application.add_handler(CommandHandler("help", self.help_command))
         self.application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
 
     def run(self):
-
         try:
             self.application = Application.builder().token(self.token).build()
             self.setup_handlers()

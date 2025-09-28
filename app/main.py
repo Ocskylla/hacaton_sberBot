@@ -2,11 +2,11 @@
 import logging
 import sys
 import os
-from app.config import Config
-from app.database.mysql_db import MySQLVectorDB
-from app.gigachat.api_client import GigaChatClient
-from app.processing.data_parser import DataParser
-from app.bot.telegram_bot import TelegramBot
+from config import Config
+from database.mysql_db import MySQLTextDB  # Изменен импорт
+from gigachat.api_client import GigaChatClient
+from processing.data_parser import DataParser
+from bot.telegram_bot import TelegramBot
 
 logging.basicConfig(
     level=logging.INFO,
@@ -19,8 +19,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-
-def setup_database(gigachat_client, database):
+def setup_database(database):  # Убран gigachat_client
     try:
         count = database.get_document_count()
         if count > 0:
@@ -31,45 +30,29 @@ def setup_database(gigachat_client, database):
 
         parser = DataParser(Config.CAMP_URL)
         website_data = parser.parse_website()
-
         faq_data = parser.create_sample_faq()
-
         all_data = website_data + faq_data
 
         if not all_data:
             logger.warning("Не удалось получить данные для базы")
             return
 
-
-        texts = [doc['content'] for doc in all_data]
-        embeddings = gigachat_client.get_embeddings(texts)
-
-        if embeddings:
-            for i, doc in enumerate(all_data):
-                doc['embedding'] = embeddings[i]
-        else:
-            logger.warning("Не удалось получить эмбеддинги, сохраняем документы без них")
-
-
+        # Сохраняем документы без эмбеддингов
         database.store_documents(all_data)
         logger.info(f"Успешно загружено {len(all_data)} документов в базу")
 
     except Exception as e:
         logger.error(f"Ошибка настройки базы данных: {e}")
 
-
 def main():
     try:
         logger.info("Запуск приложения лагеря 'Космос'...")
 
-
         config = Config()
-        gigachat_client = GigaChatClient(config.GIGACHAT_API_KEY)
-        database = MySQLVectorDB(config.MYSQL_CONFIG)
+        gigachat_client = GigaChatClient('MDE5OTg3ODYtMWY2MC03ZTM1LTk1YTctMGQyOGNkYjdlNjViOmFiZTFlZGMyLWZkOGYtNGYzMy04NjRmLTBjNzVlMmY1MDA5OA==')
+        database = MySQLTextDB(config.MYSQL_CONFIG)  # Используем новую класс
 
-
-        setup_database(gigachat_client, database)
-
+        setup_database(database)  # Убран gigachat_client
 
         count = database.get_document_count()
         if count == 0:
@@ -78,8 +61,7 @@ def main():
 
         logger.info(f"База данных готова, документов: {count}")
 
-
-        bot = TelegramBot(config.TELEGRAM_BOT_TOKEN, gigachat_client, database)
+        bot = TelegramBot('8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g', gigachat_client, database)
         bot.run()
 
     except KeyboardInterrupt:
@@ -87,10 +69,8 @@ def main():
     except Exception as e:
         logger.error(f"Критическая ошибка: {e}")
     finally:
-
         if 'database' in locals():
             database.close()
-
 
 if __name__ == "__main__":
     main()
