@@ -1090,3 +1090,1283 @@
 2025-09-28 13:08:05,817 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2025-09-28 13:08:05,817 - telegram.ext.Application - INFO - Application.stop() complete
 2025-09-28 13:08:05,819 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
+2025-09-28 13:32:08,447 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 13:32:08,447 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 13:32:08,489 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 13:32:08,521 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 13:32:08,549 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 13:32:08,550 - __main__ - INFO - В базе уже есть 26 документов, пропускаем загрузку
+2025-09-28 13:32:08,551 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 13:32:08,596 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 13:32:08,779 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 13:32:08,846 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 13:32:08,848 - telegram.ext.Application - INFO - Application started
+2025-09-28 13:32:09,010 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:32:09,010 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Какие медицинские документы необходимо предъявить при записи ребёнка в лагерь?
+2025-09-28 13:32:09,096 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:32:09,101 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 13:32:09,101 - gigachat.api_client - INFO - 🔐 Попытка аутентификации 1/3...
+2025-09-28 13:32:09,204 - gigachat.api_client - INFO - 📊 Статус ответа аутентификации: 200
+2025-09-28 13:32:09,205 - gigachat.api_client - INFO - ✅ Успешная аутентификация в GigaChat
+2025-09-28 13:32:09,206 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:32:10,079 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:32:10,079 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:32:10,242 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:32:10,243 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:32:19,074 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:32:29,134 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:32:39,192 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:32:49,261 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:32:59,319 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:33:09,378 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:33:19,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:33:29,521 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:33:39,584 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:33:49,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:33:59,714 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:34:09,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:34:19,828 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:34:29,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:34:39,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:34:50,031 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:35:00,090 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:35:10,148 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:35:20,214 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:35:30,279 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:35:40,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:35:50,410 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:36:00,471 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:36:10,531 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:36:20,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:36:30,654 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:36:40,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:36:45,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:36:45,690 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Каков полный список документов, который следует подготовить для записи ребёнка в лагерь?
+2025-09-28 13:36:45,977 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:36:45,982 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 2
+2025-09-28 13:36:45,983 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:36:47,821 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:36:47,821 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:36:47,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:36:47,901 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:36:55,745 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:37:05,804 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:37:15,865 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:37:25,925 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:37:35,981 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:37:45,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:37:45,228 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Какова стоимость пребывания ребёнка?
+2025-09-28 13:37:45,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:37:45,431 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 2
+2025-09-28 13:37:45,431 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:37:46,124 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:37:46,124 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:37:46,227 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:37:46,229 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:37:55,288 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:38:05,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:38:05,409 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:38:05,412 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Какое питание у детей в лагере?
+2025-09-28 13:38:05,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:38:05,601 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 13:38:05,601 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:38:06,213 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:38:06,214 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:38:06,300 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:38:06,302 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:38:15,485 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:38:25,544 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:38:35,603 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:39:03,441 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 13:39:03,442 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 13:39:03,480 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 13:39:03,504 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 13:39:03,529 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 13:39:03,531 - __main__ - INFO - В базе уже есть 26 документов, пропускаем загрузку
+2025-09-28 13:39:03,532 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 13:39:03,602 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 13:39:03,787 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 13:39:03,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 13:39:03,846 - telegram.ext.Application - INFO - Application started
+2025-09-28 13:39:04,028 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:39:04,031 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Существуют ли специальные условия пребывания в лагере детей-инвалидов?
+2025-09-28 13:39:04,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:39:04,117 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 13:39:04,117 - gigachat.api_client - INFO - 🔐 Попытка аутентификации 1/3...
+2025-09-28 13:39:04,217 - gigachat.api_client - INFO - 📊 Статус ответа аутентификации: 200
+2025-09-28 13:39:04,217 - gigachat.api_client - INFO - ✅ Успешная аутентификация в GigaChat
+2025-09-28 13:39:04,219 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:39:08,579 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:39:08,580 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:39:08,667 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:39:08,668 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:39:14,098 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:39:24,173 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:39:34,236 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:39:44,302 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:39:54,375 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:40:03,685 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:40:03,687 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Существует ли в лагере квалифицированный детский психолог?
+2025-09-28 13:40:03,936 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:40:03,941 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 2
+2025-09-28 13:40:03,942 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:40:04,617 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:40:04,617 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:40:04,764 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:40:04,765 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:40:13,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:40:22,931 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:40:22,933 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Можно ли получить контакты отдельных сотрудников лагеря?
+2025-09-28 13:40:23,162 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:40:23,167 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 13:40:23,167 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:40:24,765 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:40:24,766 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:40:24,874 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:40:24,877 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:40:32,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:40:43,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:40:53,131 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:41:03,196 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:41:13,261 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:41:23,326 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:41:33,390 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:41:43,455 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:41:53,517 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:42:03,579 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:42:13,643 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:42:23,708 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:42:33,777 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:42:43,841 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:42:53,903 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:43:03,971 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:43:14,033 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:43:24,098 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:43:34,160 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:43:44,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:43:54,289 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:44:04,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:44:14,422 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:44:24,485 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:44:34,547 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:44:44,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:44:54,674 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:45:04,736 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:45:14,809 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:45:24,873 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:45:34,941 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:45:45,010 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:45:55,073 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:46:05,134 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:46:15,198 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:46:25,250 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:46:35,324 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:46:45,390 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:46:55,453 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:47:05,543 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:47:15,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:47:25,754 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:47:35,822 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:47:45,870 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:47:46,300 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:47:46,300 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Спасибо за помощь!
+2025-09-28 13:47:46,545 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:47:46,545 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 13:47:46,545 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:47:47,317 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:47:47,317 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:47:47,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:47:47,418 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:47:56,367 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:48:06,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:48:16,497 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:48:26,571 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:48:36,630 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:48:46,706 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:48:56,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:49:05,780 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:49:15,881 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:49:26,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:49:36,071 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:49:46,144 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:49:56,216 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:50:06,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:50:16,345 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:50:26,400 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:50:36,471 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:50:46,527 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:50:56,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:51:06,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:51:16,740 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:51:26,804 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:51:36,882 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:51:46,956 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:51:57,014 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:52:07,085 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:52:17,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:52:19,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:52:19,505 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): С кем связаться, в случае, если я захочу забрать ребёнка из лагеря досрочно?
+2025-09-28 13:52:19,698 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:52:19,713 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 1
+2025-09-28 13:52:19,715 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:52:20,465 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:52:20,465 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:52:20,565 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:52:20,568 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:52:29,565 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:52:39,618 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:52:49,695 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:52:59,760 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:53:09,825 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:53:19,876 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:53:29,950 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:53:40,012 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:53:50,072 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:54:00,150 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:54:09,394 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:54:09,394 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Существует ли возможность навещать ребёнка, по каким дням и в какое время?
+2025-09-28 13:54:09,582 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:54:09,582 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 1
+2025-09-28 13:54:09,582 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:54:10,249 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:54:10,251 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:54:10,321 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:54:10,334 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:54:19,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:54:29,523 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:54:36,085 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:54:36,087 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Можно ли передавать личные предметы или питание детям?
+2025-09-28 13:54:36,267 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:54:36,273 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 13:54:36,274 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:54:38,997 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:54:38,997 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:54:39,156 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:54:39,156 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:54:46,158 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:54:56,220 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:55:06,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:55:16,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:55:26,525 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:55:36,582 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:55:46,640 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:55:56,702 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:56:06,756 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:56:16,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:56:26,878 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:56:36,935 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:56:46,979 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:56:57,051 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:56:58,858 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:56:58,862 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): А хуле мой ребёнок травму у вас получил, я в суд подам, к кому обратиться?
+2025-09-28 13:56:59,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 13:56:59,064 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 13:56:59,064 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 13:57:01,336 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 13:57:01,337 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 13:57:01,424 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 13:57:01,425 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 13:57:08,920 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:57:18,978 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:57:29,037 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:57:39,095 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:57:49,153 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:57:59,212 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:58:09,269 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:58:19,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:58:29,386 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:58:39,445 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:58:49,505 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:58:59,562 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:59:09,620 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:59:19,678 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:59:29,728 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:59:39,793 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:59:49,850 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 13:59:59,909 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:00:09,957 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:00:20,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:00:30,085 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:00:40,144 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:00:50,202 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:01:00,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:01:10,318 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:01:20,375 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:01:30,434 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:01:40,491 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:01:50,551 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:02:00,609 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:02:10,669 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:02:20,727 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:02:30,779 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:02:40,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:02:50,902 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:03:00,958 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:03:11,012 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:03:21,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:03:31,134 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:03:41,191 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:03:51,252 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:04:01,312 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:04:11,370 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:04:21,429 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:04:31,488 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:04:41,546 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:04:51,605 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:05:01,663 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:05:11,712 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:05:21,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:05:31,825 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:05:41,898 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:05:51,947 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:06:02,015 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:06:12,074 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:06:22,132 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:06:32,194 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:06:42,251 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:06:52,308 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:07:02,366 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:07:12,424 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:07:22,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:07:32,533 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:07:42,597 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:07:52,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:08:02,715 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:08:12,773 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:08:22,831 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:08:32,890 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:08:42,948 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:08:53,001 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:09:03,052 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:09:13,124 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:09:23,182 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:09:33,241 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:09:43,299 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:09:53,357 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:10:03,415 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:10:13,472 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:10:23,530 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:10:33,587 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:10:43,678 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:10:53,737 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:11:03,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:11:13,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:11:23,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:11:30,275 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 409 Conflict"
+2025-09-28 14:11:30,275 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:30,276 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 381, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:35,424 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 409 Conflict"
+2025-09-28 14:11:35,425 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:35,426 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 381, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:41,666 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 409 Conflict"
+2025-09-28 14:11:41,668 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:41,668 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 381, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:49,475 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 409 Conflict"
+2025-09-28 14:11:49,476 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:49,477 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 381, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:56,452 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 409 Conflict"
+2025-09-28 14:11:56,454 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:11:56,454 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 381, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:12:06,978 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 409 Conflict"
+2025-09-28 14:12:06,980 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:12:06,980 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 381, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:12:22,577 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 409 Conflict"
+2025-09-28 14:12:22,578 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:12:22,579 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 381, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:12:44,147 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:12:54,215 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:13:04,275 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:13:14,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:13:24,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:13:34,452 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:13:44,509 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:13:54,567 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:13:55,153 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 409 Conflict"
+2025-09-28 14:13:55,154 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:13:55,155 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "D:\python\lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "D:\python\lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "D:\python\lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "D:\python\lib\site-packages\telegram\request\_baserequest.py", line 381, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-09-28 14:13:55,216 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:13:55,217 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-09-28 14:13:55,219 - telegram.ext.Application - INFO - Application.stop() complete
+2025-09-28 14:13:55,220 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
+2025-09-28 14:44:56,404 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 14:44:56,404 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 14:44:56,448 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 14:44:56,497 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 14:44:56,554 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 14:44:56,555 - __main__ - INFO - В базе уже есть 26 документов, пропускаем загрузку
+2025-09-28 14:44:56,556 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 14:44:56,615 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 14:44:56,807 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 14:44:56,944 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 14:44:56,944 - telegram.ext.Application - INFO - Application started
+2025-09-28 14:45:02,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:45:02,489 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-09-28 14:45:02,489 - telegram.ext.Application - INFO - Application.stop() complete
+2025-09-28 14:45:02,489 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
+2025-09-28 14:45:37,582 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 14:45:37,582 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 14:45:37,613 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 14:45:40,129 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 14:45:40,152 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 14:45:40,155 - __main__ - INFO - Начинаем загрузку данных в базу...
+2025-09-28 14:45:40,156 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/czto-kosmos
+2025-09-28 14:45:44,228 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/czto-kosmos (символов: 1050)
+2025-09-28 14:45:44,228 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/osnovnye-svedeniya
+2025-09-28 14:45:46,768 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/osnovnye-svedeniya (символов: 4212)
+2025-09-28 14:45:46,769 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/deyatelnost
+2025-09-28 14:45:49,040 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/deyatelnost (символов: 4889)
+2025-09-28 14:45:49,041 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/infrastruktura
+2025-09-28 14:45:51,401 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/infrastruktura (символов: 13637)
+2025-09-28 14:45:51,401 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/profilnye-smeny
+2025-09-28 14:45:53,632 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/profilnye-smeny (символов: 7450)
+2025-09-28 14:45:53,632 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/roditelyam
+2025-09-28 14:45:55,671 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/roditelyam (символов: 3074)
+2025-09-28 14:45:55,672 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dostupnaya-sreda
+2025-09-28 14:45:58,024 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dostupnaya-sreda (символов: 5608)
+2025-09-28 14:45:58,025 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/oplata
+2025-09-28 14:45:59,970 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/oplata (символов: 2361)
+2025-09-28 14:45:59,971 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/struktura_i_organy
+2025-09-28 14:46:01,682 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/struktura_i_organy (символов: 970)
+2025-09-28 14:46:01,683 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/nashi-dostizheniya
+2025-09-28 14:46:03,540 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/nashi-dostizheniya (символов: 2145)
+2025-09-28 14:46:03,541 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/muzej-czto-kosmos
+2025-09-28 14:46:05,631 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/muzej-czto-kosmos (символов: 1912)
+2025-09-28 14:46:05,631 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya
+2025-09-28 14:46:07,756 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya (символов: 2894)
+2025-09-28 14:46:07,756 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dokumenty
+2025-09-28 14:46:09,907 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dokumenty (символов: 1371)
+2025-09-28 14:46:09,907 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/kontakty
+2025-09-28 14:46:11,903 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/kontakty (символов: 1421)
+2025-09-28 14:46:11,904 - processing.data_parser - INFO - 📊 Всего распарсено документов: 21
+2025-09-28 14:46:11,904 - processing.data_parser - INFO - 📋 Создано FAQ документов: 5
+2025-09-28 14:46:11,906 - database.mysql_db - INFO - 🗑️ Очищены старые данные
+2025-09-28 14:46:12,329 - database.mysql_db - INFO - ✅ TF-IDF модель сохранена
+2025-09-28 14:46:12,329 - database.mysql_db - INFO - 💾 Успешно сохранено документов: 26
+2025-09-28 14:46:12,330 - __main__ - INFO - Успешно загружено 26 документов в базу
+2025-09-28 14:46:12,333 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 14:46:12,375 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 14:46:12,552 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 14:46:12,610 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 14:46:12,612 - telegram.ext.Application - INFO - Application started
+2025-09-28 14:46:22,790 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:46:32,856 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:46:38,238 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:46:38,240 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Можно ли получить контакты отдельных сотрудников лагеря?
+2025-09-28 14:46:38,436 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 14:46:38,442 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 14:46:38,442 - gigachat.api_client - INFO - 🔐 Попытка аутентификации 1/3...
+2025-09-28 14:46:38,556 - gigachat.api_client - INFO - 📊 Статус ответа аутентификации: 200
+2025-09-28 14:46:38,556 - gigachat.api_client - INFO - ✅ Успешная аутентификация в GigaChat
+2025-09-28 14:46:38,558 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 14:46:41,823 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 14:46:41,824 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 14:46:41,985 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 14:46:41,988 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 14:46:48,301 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:46:58,361 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:47:08,423 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:47:09,408 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:47:09,411 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Существуют ли специальные условия пребывания в лагере детей-инвалидов?
+2025-09-28 14:47:09,610 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 14:47:09,616 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 14:47:09,617 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 14:47:14,278 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 14:47:14,278 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 14:47:14,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 14:47:14,453 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 14:47:19,471 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:47:29,531 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:47:39,592 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:47:49,652 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:47:59,712 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:48:09,773 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:48:19,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:48:29,894 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:48:39,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:48:50,014 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:49:00,080 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:49:10,130 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:49:20,224 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:49:30,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:49:40,361 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:49:50,413 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:50:00,472 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:50:10,532 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:50:15,525 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:50:15,528 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Какие документы нужны для лагеря?
+2025-09-28 14:50:15,701 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 14:50:15,707 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 14:50:15,707 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 14:50:16,954 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 14:50:16,955 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 14:50:17,035 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 14:50:17,037 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 14:50:25,577 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:50:35,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:50:43,209 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:50:43,209 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-09-28 14:50:43,209 - telegram.ext.Application - INFO - Application.stop() complete
+2025-09-28 14:50:43,209 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
+2025-09-28 14:56:26,305 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 14:56:26,305 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 14:56:26,332 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 14:56:28,478 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 14:56:28,529 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 14:56:28,529 - __main__ - INFO - Начинаем загрузку данных в базу...
+2025-09-28 14:56:28,529 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/czto-kosmos
+2025-09-28 14:56:30,022 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/czto-kosmos (символов: 1050)
+2025-09-28 14:56:30,022 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/osnovnye-svedeniya
+2025-09-28 14:56:32,041 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/osnovnye-svedeniya (символов: 4212)
+2025-09-28 14:56:32,042 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/deyatelnost
+2025-09-28 14:56:33,471 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/deyatelnost (символов: 4889)
+2025-09-28 14:56:33,471 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/infrastruktura
+2025-09-28 14:56:35,023 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/infrastruktura (символов: 13637)
+2025-09-28 14:56:35,023 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/profilnye-smeny
+2025-09-28 14:56:36,513 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/profilnye-smeny (символов: 7450)
+2025-09-28 14:56:36,513 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/roditelyam
+2025-09-28 14:56:37,973 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/roditelyam (символов: 3074)
+2025-09-28 14:56:37,973 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dostupnaya-sreda
+2025-09-28 14:56:39,524 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dostupnaya-sreda (символов: 5608)
+2025-09-28 14:56:39,524 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/oplata
+2025-09-28 14:56:40,997 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/oplata (символов: 2361)
+2025-09-28 14:56:40,997 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/struktura_i_organy
+2025-09-28 14:56:42,346 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/struktura_i_organy (символов: 970)
+2025-09-28 14:56:42,346 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/nashi-dostizheniya
+2025-09-28 14:56:43,852 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/nashi-dostizheniya (символов: 2145)
+2025-09-28 14:56:43,852 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/muzej-czto-kosmos
+2025-09-28 14:56:45,296 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/muzej-czto-kosmos (символов: 1912)
+2025-09-28 14:56:45,296 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya
+2025-09-28 14:56:46,988 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya (символов: 2894)
+2025-09-28 14:56:46,988 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dokumenty
+2025-09-28 14:56:48,525 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dokumenty (символов: 1371)
+2025-09-28 14:56:48,525 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/kontakty
+2025-09-28 14:56:50,140 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/kontakty (символов: 1421)
+2025-09-28 14:56:50,140 - processing.data_parser - INFO - 📊 Всего распарсено документов: 21
+2025-09-28 14:56:50,140 - processing.data_parser - INFO - 📋 Создано FAQ документов: 5
+2025-09-28 14:56:50,140 - database.mysql_db - INFO - 🗑️ Очищены старые данные
+2025-09-28 14:56:50,466 - database.mysql_db - INFO - ✅ TF-IDF модель сохранена
+2025-09-28 14:56:50,466 - database.mysql_db - INFO - 💾 Успешно сохранено документов: 26
+2025-09-28 14:56:50,466 - __main__ - INFO - Успешно загружено 26 документов в базу
+2025-09-28 14:56:50,466 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 14:56:50,516 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 14:56:50,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 14:56:50,746 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 14:56:50,748 - telegram.ext.Application - INFO - Application started
+2025-09-28 14:56:59,017 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:56:59,020 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Какие документы нужны для лагеря?
+2025-09-28 14:56:59,203 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 14:56:59,208 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 14:56:59,208 - gigachat.api_client - INFO - 🔐 Попытка аутентификации 1/3...
+2025-09-28 14:56:59,316 - gigachat.api_client - INFO - 📊 Статус ответа аутентификации: 200
+2025-09-28 14:56:59,317 - gigachat.api_client - INFO - ✅ Успешная аутентификация в GigaChat
+2025-09-28 14:56:59,319 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 14:57:02,326 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 14:57:02,326 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 14:57:02,408 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 14:57:02,410 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 14:57:09,076 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:57:19,125 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:57:29,208 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:57:39,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:57:49,332 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:57:56,947 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 14:57:56,963 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-09-28 14:57:56,963 - telegram.ext.Application - INFO - Application.stop() complete
+2025-09-28 14:57:56,963 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
+2025-09-28 14:59:51,901 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 14:59:51,901 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 14:59:51,942 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 14:59:51,966 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 14:59:52,053 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 14:59:52,055 - __main__ - INFO - В базе уже есть 26 документов, пропускаем загрузку
+2025-09-28 14:59:52,056 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 14:59:52,090 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 14:59:52,261 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 14:59:52,323 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 14:59:52,325 - telegram.ext.Application - INFO - Application started
+2025-09-28 15:00:02,495 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:00:03,590 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:00:03,593 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Какие документы нужны для лагеря?
+2025-09-28 15:00:03,830 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:00:03,835 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 15:00:03,835 - gigachat.api_client - INFO - 🔐 Попытка аутентификации 1/3...
+2025-09-28 15:00:03,934 - gigachat.api_client - INFO - 📊 Статус ответа аутентификации: 200
+2025-09-28 15:00:03,935 - gigachat.api_client - INFO - ✅ Успешная аутентификация в GigaChat
+2025-09-28 15:00:03,936 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:00:06,536 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:00:06,537 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:00:06,627 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:00:06,629 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:00:13,645 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:00:16,984 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:00:16,984 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-09-28 15:00:16,984 - telegram.ext.Application - INFO - Application.stop() complete
+2025-09-28 15:00:16,984 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
+2025-09-28 15:01:30,663 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 15:01:30,663 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 15:01:30,702 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 15:01:32,750 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 15:01:32,774 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 15:01:32,778 - __main__ - INFO - Начинаем загрузку данных в базу...
+2025-09-28 15:01:32,779 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/czto-kosmos
+2025-09-28 15:01:36,120 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/czto-kosmos (символов: 1050)
+2025-09-28 15:01:36,120 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/osnovnye-svedeniya
+2025-09-28 15:01:38,330 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/osnovnye-svedeniya (символов: 4212)
+2025-09-28 15:01:38,330 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/deyatelnost
+2025-09-28 15:01:40,197 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/deyatelnost (символов: 4889)
+2025-09-28 15:01:40,197 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/infrastruktura
+2025-09-28 15:01:42,110 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/infrastruktura (символов: 13637)
+2025-09-28 15:01:42,110 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/profilnye-smeny
+2025-09-28 15:01:43,977 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/profilnye-smeny (символов: 7450)
+2025-09-28 15:01:43,977 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/roditelyam
+2025-09-28 15:01:45,716 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/roditelyam (символов: 3074)
+2025-09-28 15:01:45,716 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dostupnaya-sreda
+2025-09-28 15:01:47,519 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dostupnaya-sreda (символов: 5608)
+2025-09-28 15:01:47,519 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/oplata
+2025-09-28 15:01:49,387 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/oplata (символов: 2361)
+2025-09-28 15:01:49,387 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/struktura_i_organy
+2025-09-28 15:01:50,985 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/struktura_i_organy (символов: 970)
+2025-09-28 15:01:50,985 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/nashi-dostizheniya
+2025-09-28 15:01:52,679 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/nashi-dostizheniya (символов: 2145)
+2025-09-28 15:01:52,695 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/muzej-czto-kosmos
+2025-09-28 15:01:54,232 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/muzej-czto-kosmos (символов: 1912)
+2025-09-28 15:01:54,232 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya
+2025-09-28 15:01:56,066 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya (символов: 2894)
+2025-09-28 15:01:56,066 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dokumenty
+2025-09-28 15:01:57,885 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dokumenty (символов: 1371)
+2025-09-28 15:01:57,885 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/kontakty
+2025-09-28 15:01:59,453 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/kontakty (символов: 1421)
+2025-09-28 15:01:59,453 - processing.data_parser - INFO - 📊 Всего распарсено документов: 21
+2025-09-28 15:01:59,453 - processing.data_parser - INFO - 📋 Создано FAQ документов: 5
+2025-09-28 15:01:59,453 - database.mysql_db - INFO - 🗑️ Очищены старые данные
+2025-09-28 15:01:59,782 - database.mysql_db - INFO - ✅ TF-IDF модель сохранена
+2025-09-28 15:01:59,782 - database.mysql_db - INFO - 💾 Успешно сохранено документов: 26
+2025-09-28 15:01:59,782 - __main__ - INFO - Успешно загружено 26 документов в базу
+2025-09-28 15:01:59,782 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 15:01:59,819 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 15:02:00,014 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 15:02:00,080 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 15:02:00,083 - telegram.ext.Application - INFO - Application started
+2025-09-28 15:02:10,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:02:12,125 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:02:12,128 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Можно ли получить контакты отдельных сотрудников лагеря?
+2025-09-28 15:02:12,291 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:02:12,296 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 15:02:12,297 - gigachat.api_client - INFO - 🔐 Попытка аутентификации 1/3...
+2025-09-28 15:02:12,391 - gigachat.api_client - INFO - 📊 Статус ответа аутентификации: 200
+2025-09-28 15:02:12,392 - gigachat.api_client - INFO - ✅ Успешная аутентификация в GigaChat
+2025-09-28 15:02:12,394 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:02:13,808 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:02:13,810 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:02:13,920 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:02:13,922 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:02:22,189 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:02:23,830 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:02:23,833 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Какие документы нужны для лагеря?
+2025-09-28 15:02:24,001 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:02:24,002 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 15:02:24,002 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:02:25,178 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:02:25,178 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:02:25,293 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:02:25,295 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:02:33,895 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:02:43,940 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:02:54,006 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:03:04,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:03:14,136 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:03:17,188 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:03:17,191 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Какое питание у детей в лагере?
+2025-09-28 15:03:17,379 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:03:17,383 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 15:03:17,384 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:03:18,897 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:03:18,897 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:03:19,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:03:19,071 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:03:27,250 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:03:37,299 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:03:47,962 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:03:58,015 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:04:08,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:04:09,747 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:04:09,747 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): У меня ребёнок УМЕР в вашем лагере! Я всех за решётку отправлю, гниды
+2025-09-28 15:04:09,958 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:04:09,963 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 2
+2025-09-28 15:04:09,963 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:04:11,484 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:04:11,484 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:04:11,572 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:04:11,572 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 15:04:19,821 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:04:29,880 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:04:39,947 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:04:50,005 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:05:00,066 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:05:10,126 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:05:20,187 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:05:30,262 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:05:40,323 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:05:50,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:06:00,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:06:10,503 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:06:19,019 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:06:19,021 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-09-28 15:06:19,021 - telegram.ext.Application - INFO - Application.stop() complete
+2025-09-28 15:06:19,023 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
+2025-09-28 15:10:44,282 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 15:10:44,282 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 15:10:44,318 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 15:10:46,622 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 15:10:46,682 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 15:10:46,685 - __main__ - INFO - Начинаем загрузку данных в базу...
+2025-09-28 15:10:46,685 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/czto-kosmos
+2025-09-28 15:10:50,441 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/czto-kosmos (символов: 1050)
+2025-09-28 15:10:50,441 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/osnovnye-svedeniya
+2025-09-28 15:10:53,283 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/osnovnye-svedeniya (символов: 4212)
+2025-09-28 15:10:53,283 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/deyatelnost
+2025-09-28 15:10:55,321 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/deyatelnost (символов: 4889)
+2025-09-28 15:10:55,321 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/infrastruktura
+2025-09-28 15:10:57,357 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/infrastruktura (символов: 13637)
+2025-09-28 15:10:57,357 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/profilnye-smeny
+2025-09-28 15:10:59,156 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/profilnye-smeny (символов: 7450)
+2025-09-28 15:10:59,172 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/roditelyam
+2025-09-28 15:11:00,911 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/roditelyam (символов: 3074)
+2025-09-28 15:11:00,911 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dostupnaya-sreda
+2025-09-28 15:11:02,614 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dostupnaya-sreda (символов: 5608)
+2025-09-28 15:11:02,614 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/oplata
+2025-09-28 15:11:04,357 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/oplata (символов: 2361)
+2025-09-28 15:11:04,357 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/struktura_i_organy
+2025-09-28 15:11:06,253 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/struktura_i_organy (символов: 970)
+2025-09-28 15:11:06,253 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/nashi-dostizheniya
+2025-09-28 15:11:08,013 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/nashi-dostizheniya (символов: 2145)
+2025-09-28 15:11:08,013 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/muzej-czto-kosmos
+2025-09-28 15:11:09,804 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/muzej-czto-kosmos (символов: 1912)
+2025-09-28 15:11:09,820 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya
+2025-09-28 15:11:11,598 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya (символов: 2894)
+2025-09-28 15:11:11,599 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dokumenty
+2025-09-28 15:11:13,281 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dokumenty (символов: 1371)
+2025-09-28 15:11:13,281 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/kontakty
+2025-09-28 15:11:15,032 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/kontakty (символов: 1421)
+2025-09-28 15:11:15,032 - processing.data_parser - INFO - 📊 Всего распарсено документов: 21
+2025-09-28 15:11:15,032 - processing.data_parser - INFO - 📋 Создано FAQ документов: 5
+2025-09-28 15:11:15,032 - database.mysql_db - INFO - 🗑️ Очищены старые данные
+2025-09-28 15:11:15,502 - database.mysql_db - INFO - ✅ TF-IDF модель сохранена
+2025-09-28 15:11:15,502 - database.mysql_db - INFO - 💾 Успешно сохранено документов: 26
+2025-09-28 15:11:15,502 - __main__ - INFO - Успешно загружено 26 документов в базу
+2025-09-28 15:11:15,502 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 15:11:15,548 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 15:11:15,741 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 15:11:15,807 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 15:11:15,809 - telegram.ext.Application - INFO - Application started
+2025-09-28 15:11:15,962 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:11:15,962 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): У меня ребёнок отравился вашей едой, кто мне возместит это?
+2025-09-28 15:11:16,031 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:11:16,047 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 1
+2025-09-28 15:11:16,047 - gigachat.api_client - INFO - 🔐 Попытка аутентификации 1/3...
+2025-09-28 15:11:16,148 - gigachat.api_client - INFO - 📊 Статус ответа аутентификации: 200
+2025-09-28 15:11:16,149 - gigachat.api_client - INFO - ✅ Успешная аутентификация в GigaChat
+2025-09-28 15:11:16,150 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:11:18,075 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:11:18,075 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:11:18,181 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:11:18,181 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 15:11:18,181 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\telegram\ext\_application.py", line 1234, in process_update
+    await coroutine
+  File "D:\python\lib\site-packages\telegram\ext\_basehandler.py", line 157, in handle_update
+    return await self.callback(update, context)
+  File "D:\лабы\3 курс\hacaton_sberBot\app\bot\telegram_bot.py", line 186, in handle_message
+    user = update.message.from_user
+AttributeError: 'NoneType' object has no attribute 'from_user'
+2025-09-28 15:11:26,014 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:11:36,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:11:43,364 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:11:43,367 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): У меня ребёнок отравился вашей едой, кто мне возместит это?
+2025-09-28 15:11:43,639 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:11:43,654 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 1
+2025-09-28 15:11:43,655 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:11:46,488 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:11:46,488 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:11:46,571 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:11:46,573 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:11:53,422 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:11:56,555 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:11:56,558 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Какое питание у детей в лагере?
+2025-09-28 15:11:56,747 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:11:56,752 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 15:11:56,752 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:11:58,516 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:11:58,516 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:11:58,609 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:11:58,611 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:12:06,611 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:12:12,624 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:12:12,640 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Контакты
+2025-09-28 15:12:12,814 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:12:12,831 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 2
+2025-09-28 15:12:12,832 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:12:13,901 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:12:13,902 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:12:13,991 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:12:13,993 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:12:22,695 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:12:23,155 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:12:23,157 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Администрация
+2025-09-28 15:12:23,349 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:12:23,354 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 15:12:23,354 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:12:24,137 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:12:24,137 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:12:24,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:12:24,280 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:12:33,201 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:12:43,261 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:12:53,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:13:03,377 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:13:13,431 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:13:23,473 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:13:33,541 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:13:43,583 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:13:53,650 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:14:03,706 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:14:13,748 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:14:23,817 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:14:33,868 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:14:43,917 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:14:53,984 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:15:04,040 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:15:14,084 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:15:24,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:15:34,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:15:44,252 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:15:54,302 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:16:04,368 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:16:14,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:16:24,469 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:16:34,534 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:16:44,587 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:16:54,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:17:04,701 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:17:14,757 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:17:24,811 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:17:34,864 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:17:44,915 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:17:54,965 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:18:05,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:18:13,854 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:18:13,857 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Согласно какому закону РФ осуществляется возмещение ущерба в случае причинения вреда моему ребенку лагерем?
+2025-09-28 15:18:14,131 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:18:14,139 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 15:18:14,140 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:18:15,460 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:18:15,461 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:18:15,561 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:18:15,563 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 15:18:23,911 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:18:33,958 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:18:44,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:18:54,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:19:04,131 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:19:14,174 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:19:18,285 - __main__ - INFO - Приложение остановлено пользователем
+2025-09-28 15:19:18,285 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
+2025-09-28 15:20:06,070 - __main__ - INFO - Запуск приложения лагеря 'Космос'...
+2025-09-28 15:20:06,071 - gigachat.api_client - INFO - ✅ GigaChatClient инициализирован
+2025-09-28 15:20:06,111 - database.mysql_db - INFO - ✅ Успешное подключение к MySQL
+2025-09-28 15:20:08,635 - database.mysql_db - INFO - ✅ Таблицы созданы успешно
+2025-09-28 15:20:08,702 - database.mysql_db - INFO - ✅ TF-IDF модель загружена из файла
+2025-09-28 15:20:08,708 - __main__ - INFO - Начинаем загрузку данных в базу...
+2025-09-28 15:20:08,709 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/czto-kosmos
+2025-09-28 15:20:12,023 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/czto-kosmos (символов: 1050)
+2025-09-28 15:20:12,023 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/osnovnye-svedeniya
+2025-09-28 15:20:14,488 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/osnovnye-svedeniya (символов: 4212)
+2025-09-28 15:20:14,488 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/deyatelnost
+2025-09-28 15:20:16,517 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/deyatelnost (символов: 4889)
+2025-09-28 15:20:16,518 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/infrastruktura
+2025-09-28 15:20:18,468 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/infrastruktura (символов: 13637)
+2025-09-28 15:20:18,468 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/profilnye-smeny
+2025-09-28 15:20:20,237 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/profilnye-smeny (символов: 7450)
+2025-09-28 15:20:20,237 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/roditelyam
+2025-09-28 15:20:22,052 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/roditelyam (символов: 3074)
+2025-09-28 15:20:22,053 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dostupnaya-sreda
+2025-09-28 15:20:23,987 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dostupnaya-sreda (символов: 5608)
+2025-09-28 15:20:23,988 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/oplata
+2025-09-28 15:20:26,146 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/oplata (символов: 2361)
+2025-09-28 15:20:26,147 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/struktura_i_organy
+2025-09-28 15:20:27,722 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/struktura_i_organy (символов: 970)
+2025-09-28 15:20:27,723 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/nashi-dostizheniya
+2025-09-28 15:20:29,514 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/nashi-dostizheniya (символов: 2145)
+2025-09-28 15:20:29,514 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/muzej-czto-kosmos
+2025-09-28 15:20:31,134 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/muzej-czto-kosmos (символов: 1912)
+2025-09-28 15:20:31,135 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya
+2025-09-28 15:20:32,984 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/fotogalereya/usloviya-prozhivaniya (символов: 2894)
+2025-09-28 15:20:32,985 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/dokumenty
+2025-09-28 15:20:34,686 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/dokumenty (символов: 1371)
+2025-09-28 15:20:34,687 - processing.data_parser - INFO - Парсим страницу: https://cosmos.68edu.ru/kontakty
+2025-09-28 15:20:36,873 - processing.data_parser - INFO - ✅ Успешно распарсена страница: https://cosmos.68edu.ru/kontakty (символов: 1421)
+2025-09-28 15:20:36,873 - processing.data_parser - INFO - 📊 Всего распарсено документов: 21
+2025-09-28 15:20:36,873 - processing.data_parser - INFO - 📋 Создано FAQ документов: 5
+2025-09-28 15:20:36,875 - database.mysql_db - INFO - 🗑️ Очищены старые данные
+2025-09-28 15:20:37,213 - database.mysql_db - INFO - ✅ TF-IDF модель сохранена
+2025-09-28 15:20:37,214 - database.mysql_db - INFO - 💾 Успешно сохранено документов: 26
+2025-09-28 15:20:37,214 - __main__ - INFO - Успешно загружено 26 документов в базу
+2025-09-28 15:20:37,217 - __main__ - INFO - База данных готова, документов: 26
+2025-09-28 15:20:37,257 - bot.telegram_bot - INFO - Бот запущен...
+2025-09-28 15:20:37,445 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getMe "HTTP/1.1 200 OK"
+2025-09-28 15:20:37,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/deleteWebhook "HTTP/1.1 200 OK"
+2025-09-28 15:20:37,505 - telegram.ext.Application - INFO - Application started
+2025-09-28 15:20:47,708 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:20:57,770 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:21:07,824 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:21:17,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:21:27,955 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:21:38,050 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:21:48,114 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:21:58,176 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:22:08,236 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:22:18,297 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:22:28,386 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:22:38,447 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:22:48,501 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:22:58,555 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:23:08,630 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:23:13,400 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:23:13,403 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Какое питание у детей в лагере?
+2025-09-28 15:23:13,611 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:23:13,616 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 15:23:13,617 - gigachat.api_client - INFO - 🔐 Попытка аутентификации 1/3...
+2025-09-28 15:23:13,752 - gigachat.api_client - INFO - 📊 Статус ответа аутентификации: 200
+2025-09-28 15:23:13,753 - gigachat.api_client - INFO - ✅ Успешная аутентификация в GigaChat
+2025-09-28 15:23:13,755 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:23:15,628 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:23:15,628 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:23:15,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:23:15,726 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:23:23,449 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:23:32,055 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:23:32,059 - bot.telegram_bot - INFO - Вопрос от Дмитрий (1733810058): Какие документы нужны для лагеря?
+2025-09-28 15:23:32,228 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:23:32,244 - database.mysql_db - INFO - 🔍 Найдено похожих документов: 3
+2025-09-28 15:23:32,245 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:23:33,445 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:23:33,446 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:23:33,573 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:23:33,575 - bot.telegram_bot - INFO - Ответ отправлен пользователю Дмитрий
+2025-09-28 15:23:37,681 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:23:37,681 - bot.telegram_bot - INFO - Вопрос от Hyperka (948304099): Согласно какому закону РФ осуществляется возмещение ущерба в случае причинения вреда моему ребенку лагерем?
+2025-09-28 15:23:37,746 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendChatAction "HTTP/1.1 200 OK"
+2025-09-28 15:23:37,761 - database.mysql_db - INFO - 🔍 Найдено документов по ключевым словам: 3
+2025-09-28 15:23:37,762 - gigachat.api_client - INFO - 💬 Попытка чат-запроса 1/3
+2025-09-28 15:23:39,505 - gigachat.api_client - INFO - 📊 Статус ответа чата: 200
+2025-09-28 15:23:39,505 - gigachat.api_client - INFO - ✅ Успешно получен ответ от GigaChat
+2025-09-28 15:23:39,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/sendMessage "HTTP/1.1 200 OK"
+2025-09-28 15:23:39,596 - bot.telegram_bot - INFO - Ответ отправлен пользователю Hyperka
+2025-09-28 15:23:47,750 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:23:57,844 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:24:07,904 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:24:17,960 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:24:28,033 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:24:38,095 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:24:48,155 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:24:58,216 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:25:08,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:25:18,338 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:25:28,461 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:25:38,522 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:25:48,583 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:25:58,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:26:08,704 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:26:18,765 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:26:28,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:26:38,887 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:26:48,946 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:26:58,999 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:27:09,093 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:27:19,166 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:27:29,227 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:27:39,288 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:27:49,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:27:59,444 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:28:09,506 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:28:19,571 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:28:29,632 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:28:39,692 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:28:49,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:28:59,858 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:29:09,920 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:29:19,980 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:29:30,041 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:29:40,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:29:50,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:30:00,224 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:30:10,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:30:20,346 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:30:30,435 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:30:40,505 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:30:50,567 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:31:00,628 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:31:10,693 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:31:20,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:31:30,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:31:40,908 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:31:50,976 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:32:01,034 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:32:11,118 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:32:21,178 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:32:31,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:32:41,301 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:32:51,362 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:33:01,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:33:11,518 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:33:21,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:33:31,650 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:33:41,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:33:51,801 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:34:01,862 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:34:11,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:34:21,986 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:34:32,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:34:42,129 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:34:52,191 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:35:02,255 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:35:12,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:35:22,376 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:35:32,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:35:42,500 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:35:52,561 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:36:02,628 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:36:12,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:36:22,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:36:32,827 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:36:42,891 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:36:52,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:37:03,041 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:37:13,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:37:23,294 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:37:33,365 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:37:43,435 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:37:53,497 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:38:03,559 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:38:13,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:38:23,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:38:33,748 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:38:43,810 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:38:53,869 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:39:03,929 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:39:13,984 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:39:24,049 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:39:34,109 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:39:44,170 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:39:54,231 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:40:04,291 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:40:14,352 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:40:24,415 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:40:34,481 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:40:44,540 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:40:54,604 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:41:04,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:41:14,741 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:41:24,803 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:41:34,862 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:41:44,922 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:41:54,985 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:42:05,059 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:42:15,120 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:42:22,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8410273120:AAFIfyX8A-24x_72gQMs9WjVSDHS8T4K-1g/getUpdates "HTTP/1.1 200 OK"
+2025-09-28 15:42:22,197 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-09-28 15:42:22,197 - telegram.ext.Application - INFO - Application.stop() complete
+2025-09-28 15:42:22,197 - database.mysql_db - INFO - 🔌 Соединение с MySQL закрыто
