@@ -1,0 +1,15 @@
+{
+  "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+  "gigachat_api_key": "YOUR_GIGACHAT_API_KEY_HERE",
+  "mysql_config": {
+    "host": "localhost",
+    "user": "root",
+    "password": "YOUR_PASSWORD_HERE",
+    "database": "YOUR_DATABASE_NAME_HERE"
+  },
+  "camp_url": "https://cosmos.68edu.ru",
+  "contacts": {
+    "phone": "+7 (XXX) XXX-XX-XX",
+    "email": "example@domain.com"
+  }
+}
